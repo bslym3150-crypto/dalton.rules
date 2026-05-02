@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قوانين عصابة دالتون</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0b0b0b;
+            color: #e0e0e0;
+        }
+
+        /* الهيدر مع توزيع الشعارات */
+        .header {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(20, 10, 40, 0.9)), 
+                        url('https://images.alphacoders.com/550/550051.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            justify-content: space-between; /* لتوزيع الشعارات يمين ويسار */
+            align-items: center;
+            padding: 0 50px;
+            text-align: center;
+            border-bottom: 5px solid #4a237a;
+            overflow: hidden;
+        }
+
+        /* تصميم الشعارات الشفافة والكبيرة */
+        .logo {
+            width: 220px; /* حجم أكبر */
+            height: 220px;
+            object-fit: contain;
+            opacity: 0.5; /* تأثير الشفافية */
+            filter: grayscale(20%); /* تقليل الألوان قليلاً للاندماج */
+            transition: 0.5s;
+        }
+
+        .logo:hover {
+            opacity: 1; /* يظهر اللون بوضوح عند مرور الماوس */
+            transform: scale(1.1);
+        }
+
+        /* حاوية النصوص في المنتصف */
+        .header-titles {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .header h1 {
+            font-size: 55px;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 20px rgba(0,0,0,1);
+            color: #fff;
+        }
+
+        .warning-text {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #fff;
+            background: rgba(204, 0, 0, 0.85); /* خلفية حمراء شفافة */
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            box-shadow: 0 0 25px rgba(204, 0, 0, 0.6);
+            border: 2px solid #ff4d4d;
+        }
+
+        /* حاوية القوانين */
+        .content-container {
+            max-width: 950px;
+            margin: -50px auto 50px auto;
+            background: rgba(26, 26, 26, 0.95);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.8);
+            border: 1px solid #333;
+            position: relative;
+            z-index: 5;
+        }
+
+        .rule-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 22px;
+            background: #222;
+            border-right: 6px solid #4a237a;
+            border-radius: 12px;
+            transition: 0.4s;
+        }
+
+        .rule-box:hover {
+            transform: translateX(-15px);
+            background: #2d1b40;
+            border-right-color: #8a2be2;
+        }
+
+        .rule-number {
+            background: #4a237a;
+            color: white;
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+        }
+
+        .rule-text {
+            font-size: 20px;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        /* تحسينات الجوال */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 40px 10px;
+            }
+            .logo { width: 150px; height: 150px; opacity: 0.7; }
+            .header h1 { font-size: 35px; }
+            .content-container { margin: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <!-- شعار السيرفر على اليمين -->
+        <img src="server_logo.png" alt="Server Logo" class="logo">
+
+        <div class="header-titles">
+            <h1>عصابة دالتون</h1>
+            <div class="warning-text">الرجاء اخذ القوانين بشكل جدي عشان تبعدك عن الباند</div>
+        </div>
+
+        <!-- شعار دالتون على اليسار -->
+        <img src="dalton_logo.png" alt="Dalton Logo" class="logo">
+    </div>
+
+    <div class="content-container">
+        <div class="rule-box"><div class="rule-number">١</div><div class="rule-text">احترام مسؤولي العصابة واجب؛ مخالفتهم تعرضك للإنذار الأول.</div></div>
+        <div class="rule-box"><div class="rule-number">٢</div><div class="rule-text">عند وصولك إلى (٣) إنذارات، سيتم طردك فوراً من العصابة.</div></div>
+        <div class="rule-box"><div class="rule-number">٣</div><div class="rule-text">في حال تم "تدبيلك" في الراديو وقت المداهمة، سيتم محاسبتك.</div></div>
+        <div class="rule-box"><div class="rule-number">٤</div><div class="rule-text">يمنع القيام بأي مداهمة دون إذن مسبق؛ المخالفة تعني الفصل.</div></div>
+        <div class="rule-box"><div class="rule-number">٥</div><div class="rule-text">خيانة العصابة أو تسريب المعلومات = فصل + بلاك ليست نهائي.</div></div>
+        <div class="rule-box"><div class="rule-number">٦</div><div class="rule-text">التعاون مع العسكريين أو الأعداء = بلاك ليست + فصل مباشر.</div></div>
+        <div class="rule-box"><div class="rule-number">٧</div><div class="rule-text">عدم الالتزام بقوانين السرقة في السيرفر الأساسي = طرد.</div></div>
+        <div class="rule-box"><div class="rule-number">٨</div><div class="rule-text">يمنع افتعال المشاكل الداخلية؛ أي نزاع يحل عبر المسؤولين.</div></div>
+        <div class="rule-box"><div class="rule-number">٩</div><div class="rule-text">الالتزام بالزي الرسمي والسيارات المعتمدة في المهام الرسمية.</div></div>
+        <div class="rule-box"><div class="rule-number">١٠</div><div class="rule-text">التفاعل الأسبوعي إلزامي؛ الغياب بدون عذر يعرضك للاستبعاد.</div></div>
+    </div>
+
+</body>
+</html>
